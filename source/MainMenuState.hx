@@ -279,7 +279,7 @@ class MainMenuState extends MusicBeatState
 		switch (daChoice)
 		{
 			case 'story mode':
-				PlayState.storyPlaylist = ['charting','hit-rate', 'ghost-tapping'];
+				PlayState.storyPlaylist = ['charting','hit-rate', 'ghost-tapping', 'high-bpm', 'copy-and-paste', 'reset'];
 				PlayState.isStoryMode = true;
 	
 				PlayState.storyDifficulty = 2;

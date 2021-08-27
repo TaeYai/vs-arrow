@@ -30,6 +30,8 @@ class DialogueBox extends FlxSpriteGroup
 
 	var portraitLeft:FlxSprite;
 	var portraitRight:FlxSprite;
+	var portraitLeftgf:FlxSprite;
+	var portraitLeftmad:FlxSprite;
 
 	var handSelect:FlxSprite;
 	var bgFade:FlxSprite;
@@ -88,7 +90,7 @@ class DialogueBox extends FlxSpriteGroup
 				var face:FlxSprite = new FlxSprite(320, 170).loadGraphic(Paths.image('weeb/spiritFaceForward'));
 				face.setGraphicSize(Std.int(face.width * 6));
 				add(face);
-			case 'charting' | 'hit-rate' | 'ghost-tapping':
+			case 'charting' | 'hit-rate' | 'ghost-tapping' | 'high-bpm' | 'copy-and-paste' | 'reset' | 'reset-tapping':
 				hasDialog = true;
 
 				box.frames = Paths.getSparrowAtlas('speech_bubble_talking');
@@ -101,14 +103,32 @@ class DialogueBox extends FlxSpriteGroup
 		if (!hasDialog)
 			return;
 		
-		portraitLeft = new FlxSprite(-20, 40);
-		portraitLeft.frames = Paths.getSparrowAtlas('weeb/senpaiPortrait');
-		portraitLeft.animation.addByPrefix('enter', 'Senpai Portrait Enter', 24, false);
-		portraitLeft.setGraphicSize(Std.int(portraitLeft.width * PlayState.daPixelZoom * 0.9));
+		portraitLeft = new FlxSprite(30, 90);
+		portraitLeft.frames = Paths.getSparrowAtlas('portriat/ArrowPortraits');
+		portraitLeft.animation.addByPrefix('enter', 'NoteIdle', 24, false);
+		portraitLeft.setGraphicSize(Std.int(portraitLeft.width * PlayState.daPixelZoom * 0.2));
 		portraitLeft.updateHitbox();
 		portraitLeft.scrollFactor.set();
 		add(portraitLeft);
 		portraitLeft.visible = false;
+
+		portraitLeftgf = new FlxSprite(30, 90);
+		portraitLeftgf.frames = Paths.getSparrowAtlas('portriat/GFArrowPortraits');
+		portraitLeftgf.animation.addByPrefix('enter', 'GFNoteIdle', 24, false);
+		portraitLeftgf.setGraphicSize(Std.int(portraitLeft.width * PlayState.daPixelZoom * 0.2));
+		portraitLeftgf.updateHitbox();
+		portraitLeftgf.scrollFactor.set();
+		add(portraitLeftgf);
+		portraitLeftgf.visible = false;
+
+		portraitLeftmad = new FlxSprite(30, 90);
+		portraitLeftmad.frames = Paths.getSparrowAtlas('portriat/AngryArrowPortraits');
+		portraitLeftmad.animation.addByPrefix('enter', 'AngryNoteIdle', 24, false);
+		portraitLeftmad.setGraphicSize(Std.int(portraitLeft.width * PlayState.daPixelZoom * 0.2));
+		portraitLeftmad.updateHitbox();
+		portraitLeftmad.scrollFactor.set();
+		add(portraitLeftmad);
+		portraitLeftmad.visible = false;
 
 		portraitRight = new FlxSprite(700, 200);
 		portraitRight.frames = Paths.getSparrowAtlas('portriat/bfPortrait');
@@ -126,10 +146,10 @@ class DialogueBox extends FlxSpriteGroup
 		add(box);
 
 		box.screenCenter(X);
-		portraitLeft.screenCenter(X);
+		//portraitLeft.screenCenter(X);
 
 		handSelect = new FlxSprite(FlxG.width * 0.9, FlxG.height * 0.9).loadGraphic(Paths.image('weeb/pixelUI/hand_textbox'));
-		add(handSelect);
+	//	add(handSelect);
 
 		if (!talkingRight)
 		{
@@ -177,6 +197,26 @@ class DialogueBox extends FlxSpriteGroup
 				dropText.color = FlxColor.WHITE;
 			}
 			if (PlayState.SONG.song.toLowerCase()=='ghost-tapping')
+			{
+				swagDialogue.color = FlxColor.BLACK;
+				dropText.color = FlxColor.WHITE;
+			}
+			if (PlayState.SONG.song.toLowerCase()=='high-bpm')
+				{
+					swagDialogue.color = FlxColor.BLACK;
+					dropText.color = FlxColor.WHITE;
+				}
+			if (PlayState.SONG.song.toLowerCase()=='copy-and-paste')
+			{
+				swagDialogue.color = FlxColor.BLACK;
+				dropText.color = FlxColor.WHITE;
+			}
+			if (PlayState.SONG.song.toLowerCase()=='reset')
+			{
+				swagDialogue.color = FlxColor.BLACK;
+				dropText.color = FlxColor.WHITE;
+			}
+			if (PlayState.SONG.song.toLowerCase()=='reset-tapping')
 			{
 				swagDialogue.color = FlxColor.BLACK;
 				dropText.color = FlxColor.WHITE;
@@ -272,7 +312,27 @@ class DialogueBox extends FlxSpriteGroup
 				}
 			case 'arrow':
 				portraitRight.visible = false;
+				if (!portraitLeft.visible)
+				{
+					portraitLeft.visible = true;
+					portraitLeft.animation.play('enter');
+				}
+			case 'arrowmad':
+				portraitRight.visible = false;
 				portraitLeft.visible = false;
+				if (!portraitLeft.visible)
+				{
+					portraitLeftmad.visible = true;
+					portraitLeftmad.animation.play('enter');
+				}
+			case 'arrow2':
+				portraitRight.visible = false;
+				portraitLeft.visible = false;
+				if (!portraitLeft.visible)
+				{
+					portraitLeftgf.visible = true;
+					portraitLeftmad.animation.play('enter');
+				}
 		}
 	}
 

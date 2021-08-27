@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="GirlArrowAssets.png">
+	<!-- Created with Adobe Animate version 21.0.1.37179 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="GFDownNote0000" x="0" y="0" width="192" height="233" frameX="-21" frameY="0" frameWidth="239" frameHeight="318"/>
+	<SubTexture name="GFDownNote0001" x="192" y="0" width="238" height="288" frameX="-1" frameY="-30" frameWidth="239" frameHeight="318"/>
+	<SubTexture name="GFDownNote0002" x="430" y="0" width="238" height="287" frameX="0" frameY="-31" frameWidth="239" frameHeight="318"/>
+	<SubTexture name="GFDownNote0003" x="668" y="0" width="220" height="249" frameX="-7" frameY="-40" frameWidth="239" frameHeight="318"/>
+	<SubTexture name="GFDownNote0004" x="668" y="0" width="220" height="249" frameX="-7" frameY="-40" frameWidth="239" frameHeight="318"/>
+	<SubTexture name="GFDownNote0005" x="668" y="0" width="220" height="249" frameX="-7" frameY="-40" frameWidth="239" frameHeight="318"/>
+	<SubTexture name="GFDownNote0006" x="668" y="0" width="220" height="249" frameX="-7" frameY="-40" frameWidth="239" frameHeight="318"/>
+	<SubTexture name="GFDownNote0007" x="668" y="0" width="220" height="249" frameX="-7" frameY="-40" frameWidth="239" frameHeight="318"/>
+	<SubTexture name="GFDownNote0008" x="668" y="0" width="220" height="249" frameX="-7" frameY="-40" frameWidth="239" frameHeight="318"/>
+	<SubTexture name="GFDownNote0009" x="668" y="0" width="220" height="249" frameX="-7" frameY="-40" frameWidth="239" frameHeight="318"/>
+	<SubTexture name="GFLeftNote0000" x="888" y="0" width="212" height="170" frameX="-58" frameY="-31" frameWidth="270" frameHeight="231"/>
+	<SubTexture name="GFLeftNote0001" x="1100" y="0" width="266" height="231" frameX="0" frameY="0" frameWidth="270" frameHeight="231"/>
+	<SubTexture name="GFLeftNote0002" x="1366" y="0" width="260" height="221" frameX="0" frameY="-5" frameWidth="270" frameHeight="231"/>
+	<SubTexture name="GFLeftNote0003" x="1626" y="0" width="242" height="228" frameX="-17" frameY="-1" frameWidth="270" frameHeight="231"/>
+	<SubTexture name="GFLeftNote0004" x="1626" y="0" width="242" height="228" frameX="-17" frameY="-1" frameWidth="270" frameHeight="231"/>
+	<SubTexture name="GFNoteIdle0000" x="1868" y="0" width="157" height="187"/>
+	<SubTexture name="GFNoteIdle0001" x="0" y="288" width="157" height="180" frameX="0" frameY="-4" frameWidth="157" frameHeight="187"/>
+	<SubTexture name="GFNoteIdle0002" x="157" y="288" width="157" height="173" frameX="0" frameY="-8" frameWidth="157" frameHeight="187"/>
+	<SubTexture name="GFNoteIdle0003" x="314" y="288" width="157" height="167" frameX="0" frameY="-12" frameWidth="157" frameHeight="187"/>
+	<SubTexture name="GFNoteIdle0004" x="471" y="288" width="157" height="160" frameX="0" frameY="-16" frameWidth="157" frameHeight="187"/>
+	<SubTexture name="GFNoteIdle0005" x="628" y="288" width="157" height="153" frameX="0" frameY="-20" frameWidth="157" frameHeight="187"/>
+	<SubTexture name="GFNoteIdle0006" x="785" y="288" width="157" height="146" frameX="0" frameY="-24" frameWidth="157" frameHeight="187"/>
+	<SubTexture name="GFNoteIdle0007" x="942" y="288" width="157" height="140" frameX="0" frameY="-27" frameWidth="157" frameHeight="187"/>
+	<SubTexture name="GFNoteIdle0008" x="1099" y="288" width="157" height="165" frameX="0" frameY="-12" frameWidth="157" frameHeight="187"/>
+	<SubTexture name="GFNoteIdle0009" x="1868" y="0" width="157" height="187"/>
+	<SubTexture name="GFNoteIdle0010" x="1868" y="0" width="157" height="187"/>
+	<SubTexture name="GFNoteIdle0011" x="1868" y="0" width="157" height="187"/>
+	<SubTexture name="GFNoteIdle0012" x="1868" y="0" width="157" height="187"/>
+	<SubTexture name="GFRightNote0000" x="1256" y="288" width="221" height="175" frameX="0" frameY="-31" frameWidth="339" frameHeight="235"/>
+	<SubTexture name="GFRightNote0001" x="1477" y="288" width="280" height="227" frameX="-59" frameY="-8" frameWidth="339" frameHeight="235"/>
+	<SubTexture name="GFRightNote0002" x="1757" y="288" width="281" height="227" frameX="-58" frameY="-5" frameWidth="339" frameHeight="235"/>
+	<SubTexture name="GFRightNote0003" x="0" y="515" width="248" height="230" frameX="-56" frameY="0" frameWidth="339" frameHeight="235"/>
+	<SubTexture name="GFRightNote0004" x="0" y="515" width="248" height="230" frameX="-56" frameY="0" frameWidth="339" frameHeight="235"/>
+	<SubTexture name="GFUpNote0000" x="248" y="515" width="169" height="202" frameX="-35" frameY="-107" frameWidth="236" frameHeight="309"/>
+	<SubTexture name="GFUpNote0001" x="417" y="515" width="236" height="275" frameX="0" frameY="0" frameWidth="236" frameHeight="309"/>
+	<SubTexture name="GFUpNote0002" x="653" y="515" width="236" height="274" frameX="0" frameY="0" frameWidth="236" frameHeight="309"/>
+	<SubTexture name="GFUpNote0003" x="889" y="515" width="214" height="219" frameX="-11" frameY="-43" frameWidth="236" frameHeight="309"/>
+	<SubTexture name="GFUpNote0004" x="889" y="515" width="214" height="219" frameX="-11" frameY="-43" frameWidth="236" frameHeight="309"/>
+</TextureAtlas>

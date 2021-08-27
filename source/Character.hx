@@ -173,6 +173,22 @@ class Character extends FlxSprite
 				addOffset("singDOWN", 0, -30);
 
 				playAnim('idle');
+			case 'fenote':
+				tex = Paths.getSparrowAtlas('arrow/GirlArrowAssets', 'shared');
+				frames = tex;
+				animation.addByPrefix('idle', 'GFNoteIdle', 24);
+				animation.addByPrefix('singUP', 'GFUpNote', 24);
+				animation.addByPrefix('singRIGHT', 'GFRightNote', 24);
+				animation.addByPrefix('singDOWN', 'GFDownNote', 24);
+				animation.addByPrefix('singLEFT', 'GFLeftNote', 24);
+
+				addOffset('idle');
+				addOffset("singUP", -6, 50);
+				addOffset("singRIGHT", 0, 27);
+				addOffset("singLEFT", -10, 10);
+				addOffset("singDOWN", 0, -30);
+
+				playAnim('idle');
 			case 'spooky':
 				tex = Paths.getSparrowAtlas('characters/spooky_kids_assets');
 				frames = tex;

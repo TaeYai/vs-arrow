@@ -371,6 +371,14 @@ class PlayState extends MusicBeatState
 				dialogue = CoolUtil.coolTextFile(Paths.txt('hit-rate/Song2Dialogue'));
 			case 'ghost-tapping':
 				dialogue = CoolUtil.coolTextFile(Paths.txt('ghost-tapping/Song3Dialogue'));
+			case 'high-bpm':
+				dialogue = CoolUtil.coolTextFile(Paths.txt('high-bpm/HerSongDialogue1'));
+			case 'copy-and-paste':
+				dialogue = CoolUtil.coolTextFile(Paths.txt('copy-and-paste/HerSongDialogue2'));
+			case 'reset':
+				dialogue = CoolUtil.coolTextFile(Paths.txt('reset/HerSongDialogue3'));
+			case 'reset-tapping':
+				dialogue = CoolUtil.coolTextFile(Paths.txt('reset-tapping/DateDialogue'));
 		}
 
 		//defaults if no stage was found in chart
@@ -727,6 +735,19 @@ class PlayState extends MusicBeatState
 						add(bg);
 	
 				}
+			case 'love':
+				{
+						defaultCamZoom = 0.9;
+						isStoryMode = true;
+						curStage = 'love';
+						var bg:FlxSprite = new FlxSprite(-600, -200).loadGraphic(Paths.image('arrow/love'));
+						bg.antialiasing = true;
+						bg.scrollFactor.set(0.9, 0.9);
+						bg.scale.set(7,7);
+						bg.active = false;
+						add(bg);
+	
+				}
 			case 'stage':
 				{
 						defaultCamZoom = 0.9;
@@ -842,6 +863,8 @@ class PlayState extends MusicBeatState
 			case 'note':
 				dad.y += 200;
 			case 'madnote':
+				dad.y += 200;
+			case 'fenote':
 				dad.y += 200;
 			case 'senpai':
 				dad.x += 150;
@@ -1132,7 +1155,7 @@ class PlayState extends MusicBeatState
 					schoolIntro(doof);
 				case 'thorns':
 					schoolIntro(doof);
-				case 'charting' | 'hit-rate' | 'ghost-tapping':
+				case 'charting' | 'hit-rate' | 'ghost-tapping' | 'high-bpm' | 'copy-and-paste' | 'reset' | 'reset-tapping':
 					schoolIntro(doof);
 				default:
 					startCountdown();
@@ -2673,10 +2696,10 @@ class PlayState extends MusicBeatState
 			keyShit();
 
 
-		#if debug
+	
 		if (FlxG.keys.justPressed.ONE)
 			endSong();
-		#end
+		
 	}
 
 	function endSong():Void

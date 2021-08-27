@@ -2,3 +2,7 @@ Tutorial:gf:1
 charting:note:1
 hit-rate:note:1
 ghost-tapping:madnote:1
+high-bpm:fenote:1
+copy-and-paste:fenote:1
+reset:fenote:1
+reset-tapping:note:1
